@@ -16,12 +16,15 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Urbanist:wght@300;500&display=swap" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Urbanist:wght@300;500&display=swap" rel="stylesheet">
+        <style>
+            h4{text-align: center;}
+        </style>        
     </head>
     <body>
         <header>
             <div>
-                <img src="img/Logo1.png" alt="Rebeca Arens" width="125" height="106">
+                <img src="img/Logo1.png" alt="Rebeca Arens" width="100px">
                 <nav>
                     <ul>
                         <li><a href="index.html">Projects</a></li>
@@ -42,12 +45,12 @@
 
                 </div>
                 <div id="top">
-                    <h4><a href="#about">About</a>  <a href="#research">Research</a>  <a href="#ideation">Ideation</a>  <a href="#wireframes">Wireframes</a>  <a href="#testing">Testing</a>  <a href="#iterations">Design Iterations</a></h4>    
+                    <h4><a href="#about" class="section">About</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="#research" class="section">Research</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="#ideation" class="section">Ideation</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="#wireframes" class="section">Wireframes</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="#testing" class="section">Testing</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="#iterations" class="section">Design Iterations</a></h4>    
                 </div>
             </div>
             <div>
                 <div id="about">
-                    <h2>About Vela <a href="#top">&#8593</a></h2><!--I'd like for the up arrow to be much smaller than it is now; may have to use an icon, unless there's a way to have two header sizes on the same line.-->
+                    <h2>About Vela <a href="#top" class="arrow">&#8593</a></h2><!--I'd like for the up arrow to be much smaller than it is now; may have to use an icon, unless there's a way to have two header sizes on the same line.-->
                     <p>Vela is a UX/UI case study of a responsive web app that was designed over a period of 6 months, from July 2022 to January 2023, with myself as the sole UX Designer. It was designed to provide simple, straightforward marine weather reports to users of all levels. </p>
                     <h3>Why Vela?</h3>
                     <p>Sailors, surfers, and beachgoers alike all need a way to easily find and understand the weather condition of their favorite spot. Vela's goal is to make sure that everyone is able to make the most out of each day on the water, by providing accurate and reliable data, easy-to-read weather reports, and around the world service.</p>
@@ -55,7 +58,7 @@
                     <br></br>                
                 </div>
                 <div id="research">
-                    <h2>Research <a href="#top">&#8593</a></h2>
+                    <h2>Research <a href="#top" class="arrow" :active>&#8593</a></h2>
                     <p>During the discovery phase, I conducted an analysis of both the competitive environment and my potential userbase.</p>
                     <p>5 people were interviewed to learn what water sports people commonly took part in, when and where they did these activities, what kind of weather data was needed, and how to best display the information. With the interview, I was able to start to identify a rough profile of common needs, frustrations, and desires to shape the form of the app.</p>
                     <h3>Key Takeaways</h3>
@@ -70,7 +73,7 @@
                     <br></br>
                 </div>
                 <div id="ideation">
-                    <h2>Ideation <a href="#top">&#8593</a></h2>
+                    <h2>Ideation <a href="#top" class="arrow">&#8593</a></h2>
                     <p>Once I'd gained a better understanding of my users and goals through research, I created user personas and identified user journeys. With that information, I started building my user flows around the major tasks users would complete on my app.</p>
                     <h3>View and save a location's weather forecast:</h3>
                     <picture>
@@ -80,7 +83,7 @@
                     <br></br>
                 </div>
                 <div id="wireframes">
-                    <h2>Wireframes <a href="#top">&#8593</a></h2>
+                    <h2>Wireframes <a href="#top" class="arrow">&#8593</a></h2>
                     <p>It was time to start taking all my research and finding a way to integrate it all into a design that would be straightforward, easy to use, and provide as many solutions to its user as possible. </p>
                     <p>Starting off with <b>low-fidelity wireframes</b>, I started to visualize the skeleton of my project. I focused primarily on basic functionality, where I began to address the primary user flows and how they would look within the app itself.</p>
                     <picture>
@@ -101,7 +104,7 @@
                     <br></br>
                 </div>
                 <div id="testing">
-                    <h2>User Testing <a href="#top">&#8593</a></h2>
+                    <h2>User Testing <a href="#top" class="arrow">&#8593</a></h2>
                     <div>
                         <h3>Test Goals</h3>
                         <ul>
@@ -135,24 +138,24 @@
                     <p> </p>
                 </div>
                 <div id="iterations">
-                    <h2>Design Iterations <a href="#top">&#8593</a></h2>
+                    <h2>Design Iterations <a href="#top" class="arrow">&#8593</a></h2>
                     <h3>Home</h3>
                     <p>The home page is a personal touchstone, where users can access their favorite locations and businesses, messages, and personally created weather condition alerts.</p>
                     <picture>
                         <source src="img/vela/IterationHome.png" media="(max-width:787px)">
-                        <img src="img/vela/IterationHome.png" width="75%">
+                        <img src="img/vela/IterationHome.png" width="100%">
                     </picture>
                     <h3>Location Details</h3>
                     <p>The location page is one of the central features of the app, where users can view forecast information and access warnings and local businesses.</p>
                     <picture>
                         <source src="img/vela/IterationLocation.png" media="(max-width:787px)">
-                        <img src="img/vela/IterationLocation.png" width="75%">
+                        <img src="img/vela/IterationLocation.png" width="100%">
                     </picture>
                     <h3>Warnings</h3>
                     <p>The Warnings page was created to help users discover more about the location, address safety concerns, and keep users updated on weather emergencies.</p>
                     <picture>
                         <source src="img/vela/IterationWarnings.png" media="(max-width:787px)">
-                        <img src="img/vela/IterationWarnings.png" width="10%">
+                        <img src="img/vela/IterationWarnings.png" width="100%">
                     </picture>
                     <h3>Search</h3>
                     <p>The search feature is designed for users to be able to quickly and easily find a location they are searching for, whether it's a beach, a lake, or a local business.</p>
