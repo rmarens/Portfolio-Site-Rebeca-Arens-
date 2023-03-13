@@ -8,6 +8,9 @@ Body text (Graphite): #282e2e;
 Accent color (Seafoam): #cce8dc;
 Complimentary accent color (Gold): #e0c481
 */
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: #f5f5f5;
     font-family: 'Urbanist', sans-serif;
@@ -69,10 +72,7 @@ a:active {
     color: #03545b;
     text-decoration: none;
     background-color: #cce8dc;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: auto 20px;
 }
 .section:visited {
     color: #542b46;
@@ -81,11 +81,6 @@ a:active {
 .section:focus {
     color: #03545b;
     text-decoration: underline;
-}
-.section:active {
-    color: #03545b;
-    text-decoration: none;
-    background-color: #cce8dc;
 }
 .arrow {
     color: #cce8dc;
@@ -97,9 +92,6 @@ a:active {
 .arrow:focus {
     color:#cce8dc;
     text-decoration: underline;
-}
-.arrow:active {
-    color: #cce8dc;
 }
 .button {
     display: inline-block;
