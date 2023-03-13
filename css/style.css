@@ -17,36 +17,37 @@ body {
     color: #282e2e
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     line-height: normal;
 }
 h1 {
     font-size: 2.5em;
     font-weight: 500;
     color: #03545b
-}
+} /* Main page title or text */
 h2 {
     font-size: 2.0em;
     font-weight: 500;
     color: #03545b
-}
+} /* Main subheadings */
 h3 {
     font-size: 1.5em;
     font-weight: 500;
     color: #03545b
-}
+} /* Subsections of subheadings; mostly used on project pages */
 h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25em;
     font-weight: 500;
-    color: #0f2c3f
-}
+    color: #0f2c3f;
+    line-height: 2;
+} /* Project page directory headings */
 h5 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25em;
     font-weight: 300;
     color: #0f2c3f
-}
+} /* Page section title, corresponds to the nav directory options (Projects, About Me) */
 
 a {
     color: #e0c481;
@@ -68,6 +69,10 @@ a:active {
     color: #03545b;
     text-decoration: none;
     background-color: #cce8dc;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .section:visited {
     color: #542b46;
@@ -115,4 +120,11 @@ a:active {
 .button:hover {
     opacity: 0.8;
     text-decoration: none;
+}
+
+header {
+    background-color: #542b46;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 3px solid #3c2033;
 }
