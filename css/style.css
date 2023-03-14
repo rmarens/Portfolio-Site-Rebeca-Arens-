@@ -130,16 +130,17 @@ header {
     position: fixed;
     width: 100%;
     display: inline-block;
-    text-align: center;
 }
 .logo {
-    max-width:80px;
+    width:100%;
+    margin-right: 10px;
+    float: left;
+    vertical-align: auto;
 }
 nav > ul {
     list-style-type: none;
-    padding:0px;
     text-align:center;
-    position: relative;
+    padding-inline-start: 10px;
 }
 nav > ul > li {
     display:inline-block;
@@ -149,9 +150,21 @@ nav > ul > li > a {
     text-transform: uppercase;
     font-weight: 500;
     color:#e0c481;
+    font-size: .7em;
 }
 #navbar {
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+#logodiv {
+    vertical-align: middle;
+    float: left;
+    max-width: 15%;
+}
+#directory {
+    vertical-align: middle;
+    display: inline-block;
 }
 
 footer {
@@ -165,7 +178,7 @@ footer h2{
 }
 
 main {
-    padding-top: 150px;
+    padding-top: 50px;
 }
 #hero {
     background-color: #f5f5f5;
