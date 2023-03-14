@@ -130,6 +130,8 @@ header {
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.6);
     position: fixed;
     width: 100%;
+    text-align: center;
+    display: inline-block;
 }
 
 footer {
@@ -140,6 +142,10 @@ footer {
 }
 footer h2{
     color:#e0c481;
+}
+footer#contacticons {
+    text-align: center;
+    display: inline-block;
 }
 
 #hero {
@@ -157,4 +163,22 @@ main {
 
 .logo {
     max-width:20%;
+}
+nav > ul {
+    list-style-type: none;
+    padding:0px;
+    text-align:center;
+}
+nav > ul > li {
+    display:inline-block;
+}
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#e0c481;
+}
+#navbar {
+    display:inline-block;
+    padding-top: 15px;
 }
