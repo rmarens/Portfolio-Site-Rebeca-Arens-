@@ -49,7 +49,7 @@ h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25em;
     font-weight: 500;
-    color: #0f2c3f;
+    color: #03545b;
     line-height: 2;
 } /* Project page directory headings */
 h5 {
@@ -176,9 +176,12 @@ footer {
 footer h2{
     color:#e0c481;
 }
+#contacticons {
+    text-align: center;
+} /* Change icons out for white */
 
 main {
-    padding-top: 50px;
+    padding-top: 75px;
 }
 #hero {
     background-color: #f5f5f5;
