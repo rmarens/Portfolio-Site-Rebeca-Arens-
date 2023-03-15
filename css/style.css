@@ -38,12 +38,12 @@ h1 {
 h2 {
     font-size: 2.0em;
     font-weight: 500;
-    color: #03545b
+    color: #03545b;
 } /* Main subheadings */
 h3 {
     font-size: 1.5em;
     font-weight: 500;
-    color: #03545b
+    color: #03545b;
 } /* Subsections of subheadings; mostly used on project pages */
 h4 {
     font-family: 'Montserrat', sans-serif;
@@ -135,7 +135,7 @@ header {
     width:100%;
     margin-right: 10px;
     float: left;
-    vertical-align: auto;
+    vertical-align: middle;
 }
 nav > ul {
     list-style-type: none;
@@ -150,21 +150,23 @@ nav > ul > li > a {
     text-transform: uppercase;
     font-weight: 500;
     color:#e0c481;
-    font-size: .7em;
+    font-size: .8em;
 }
 #navbar {
     padding-top: 10px;
     padding-bottom: 5px;
     display: inline-block;
-}
-#logodiv {
     vertical-align: middle;
-    float: left;
-    max-width: 15%;
 }
 #directory {
     vertical-align: middle;
     display: inline-block;
+    margin-top: 1%;
+}
+#logodiv {
+    float: left;
+    max-width: 15%;
+    vertical-align: middle;
 }
 
 footer {
@@ -181,7 +183,7 @@ footer h2{
 } /* Change icons out for white */
 
 main {
-    padding-top: 75px;
+    padding-top: 15%;
 }
 #hero {
     background-color: #f5f5f5;
@@ -192,5 +194,71 @@ main {
     width:100%;
 }
 .row {
-    margin: 25px 0; 
+    margin: 25px 0;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Medium devices (640px) */
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+    }
+    nav > ul > li > a {
+        font-size: 1.5em;
+    }
+    #directory {
+        width: auto;
+        float:right;
+        vertical-align: middle;
+    }
+    body {
+        font-size: 18px;
+    }
+    #hero {
+        text-align: center;
+    }
+    #hero span {
+        display: block;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+}
+
+/* Large devices (1024px) */
+@media only screen and (min-width: 1024px) {
+    .col-lg-8 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 60%;
+    }
+    .col-lg-5 {
+        width: 40%;
+    }
+    #navbar {
+        width: 100%;
+    }
+}
+/* Xlarge devices (1440px) */
+@media only screen and (min-width: 1440px) {
+    .col-xl-4 {
+        width: 50%;
+        float: left;
+    }
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
