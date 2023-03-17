@@ -152,7 +152,7 @@ header {
     width:10%;
     max-width: 48px;
     float: left;
-    padding-top: 5px;
+    padding-top: 8px;
 }
     .logo {
         width: 100%;
@@ -211,6 +211,10 @@ main {
     width: 100%;
     max-width: 100%;
     height: auto;
+}
+
+.project-section {
+    padding-top: 80px;
 }
 
 @keyframes color-change {
