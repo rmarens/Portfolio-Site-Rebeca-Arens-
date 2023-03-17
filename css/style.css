@@ -129,12 +129,28 @@ a:active {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
-    padding: 0 10px;
+    padding: 5px 10px;
 }
 .nav-button:hover,
 .nav-button:focus {
     text-decoration: underline;
+    animation: 2s pulse infinite ease-out;
 }
+@keyframes pulse {
+    0% {
+        transform: scale(.95);
+        text-shadow: 2px 2px 10px rgba(255, 212, 39, 0.7);
+    }
+    50% {
+        transform: scale(1);
+        text-shadow: 2px 2px 10px rgba(255, 212, 39, 0.0);
+    }
+    100% {
+        transform: scale(.95);
+        text-shadow: 2px 2px 10px rgba(255, 212, 39, 0.7);
+    }
+}
+
 .nav-button:visited {
     color: #f5f5f5;
 }
@@ -281,7 +297,11 @@ main {
         max-width: 64px;
         float: left;
         padding-top: 5px;
-    }    
+    }
+    .nav-button {
+        margin-inline-start: 20px;
+    }
+        
 }
 
 /* Large devices (1024px) */
