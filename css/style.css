@@ -124,6 +124,20 @@ a:active {
     opacity: 0.8;
     text-decoration: none;
 }
+.nav-button {
+    color: #f5f5f5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0 10px;
+}
+.nav-button:hover,
+.nav-button:focus {
+    text-decoration: underline;
+}
+.nav-button:visited {
+    color: #f5f5f5;
+}
 
 header {
     background-color: #542b46;
@@ -131,45 +145,28 @@ header {
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.6);
     position: fixed;
     width: 100%;
-    display: inline-block;
-}
-.logo {
-    width:100%;
-    margin-right: 10px;
-    float: left;
-    vertical-align: middle;
-}
-nav > ul {
-    list-style-type: none;
-    text-align:center;
-    padding-inline-start: 10px;
-}
-nav > ul > li {
-    display:inline-block;
-}
-nav > ul > li > a {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color:#e0c481;
-    font-size: .8em;
-}
-#navbar {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    display: inline-block;
-    vertical-align: middle;
-}
-#directory {
-    vertical-align: middle;
-    display: inline-block;
-    margin-top: 1%;
+    padding: 10px 0;
+    text-align: center;
 }
 #logodiv {
+    width:10%;
+    max-width: 48px;
     float: left;
-    max-width: 15%;
-    vertical-align: middle;
+    padding-top: 5px;
 }
+    .logo {
+        width: 100%;
+    }
+#directory {
+    display: inline-block;
+}
+    nav > ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    nav > ul > li {
+        display: inline-block
+    }
 
 footer {
     background-color: #542b46;
@@ -275,6 +272,12 @@ main {
     .col-md-6 {
         width: 50%;
     }
+    #logodiv {
+        width:10%;
+        max-width: 64px;
+        float: left;
+        padding-top: 5px;
+    }    
 }
 
 /* Large devices (1024px) */
@@ -294,6 +297,13 @@ main {
     body {
         font-size: 22px;
     }
+    #logodiv {
+        width:10%;
+        max-width: 82px;
+        float: left;
+        padding-top: 5px;
+    }
+    
 }
 /* Xlarge devices (1440px) */
 @media only screen and (min-width: 1440px) {
