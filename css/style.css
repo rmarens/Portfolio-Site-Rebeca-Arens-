@@ -139,15 +139,15 @@ a:active {
 @keyframes pulse {
     0% {
         transform: scale(.95);
-        text-shadow: 2px 2px 10px rgba(255, 212, 39, 0.7);
+        text-shadow: 0 0 10px rgba(255, 212, 39, 0.7);
     }
     50% {
         transform: scale(1);
-        text-shadow: 2px 2px 10px rgba(255, 212, 39, 0.0);
+        text-shadow: 0 0 10px rgba(255, 212, 39, 0.0);
     }
     100% {
         transform: scale(.95);
-        text-shadow: 2px 2px 10px rgba(255, 212, 39, 0.7);
+        text-shadow: 0 0 10px rgba(255, 212, 39, 0.7);
     }
 }
 
@@ -257,14 +257,13 @@ main {
     animation: 40s cloud-move-reverse infinite alternate linear;
 }
 
-/*@keyframes ball-change {
-    from {transform: translate(0,0);}
-    to {transform: translate(0,100px);}
+.Pickleball {
+    animation: 2s bounce cubic-bezier(0.5, 0.05, 1, .9) infinite alternate;
 }
-.pickleball {
-    animation: 3s ball-change infinite alternate linear;
-}*/
-
+@keyframes bounce {
+    from {transform: translate3d(0, 0, 0);}
+    to   {transform: translate3d(0, 300px, 0);}
+}
 
 
 /* Medium devices (640px) */
