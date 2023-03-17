@@ -33,7 +33,9 @@ h1, h2, h3, h4, h5 {
 h1 {
     font-size: 3em;
     font-weight: 500;
-    color: #03545b
+    color: #03545b;
+    font-family: 'RushK', sans-serif;
+    color: #542b46;
 } /* Main page title or text */
 h2 {
     font-size: 2.0em;
@@ -238,14 +240,13 @@ main {
     animation: 40s cloud-move-reverse infinite alternate linear;
 }
 
-@keyframes ball-change {
-    0% {fill: #edc655;}
-    50% {fill: #fcffad;}
-    100% {fill: #f76414;}
+/*@keyframes ball-change {
+    from {transform: translate(0,0);}
+    to {transform: translate(0,100px);}
 }
-.test9 {
+.pickleball {
     animation: 3s ball-change infinite alternate linear;
-}
+}*/
 
 
 
