@@ -130,6 +130,7 @@ a:active {
     text-transform: uppercase;
     font-weight: 500;
     padding: 5px 10px;
+    text-align: center;
 }
 .nav-button:hover,
 .nav-button:focus {
@@ -161,28 +162,34 @@ header {
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.6);
     position: fixed;
     width: 100%;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 0 4px;
 }
-#logodiv {
-    width:10%;
+.logo {
+    width: 10%;
     max-width: 48px;
-    float: left;
-    padding-top: 8px;
 }
-    .logo {
-        width: 100%;
-    }
-#directory {
-    display: inline-block;
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
-    nav > ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    nav > ul > li {
-        display: inline-block
-    }
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    font-size: 20px;
+    padding-right: 0px;
+}
 
 footer {
     background-color: #542b46;
@@ -270,14 +277,21 @@ main {
 @media only screen and (min-width: 640px) {
     header {
         text-align: unset;
+        padding: 20px 0;
     }
-    nav > ul > li > a {
-        font-size: 1.25em;
-    }
-    #directory {
+    nav {
         width: auto;
-        float:right;
-        vertical-align: middle;
+        float: right;
+    }
+    nav > ul {
+        margin: 1em 0;
+        display: inline-block;
+    }
+    nav > ul > li {
+        display: inline-block
+    }
+    nav > ul > li > a { 
+        font-size: 1.25em;
     }
     body {
         font-size: 18px;
@@ -291,16 +305,23 @@ main {
     .col-md-6 {
         width: 50%;
     }
-    #logodiv {
-        width:10%;
-        max-width: 64px;
-        float: left;
-        padding-top: 5px;
-    }
     .nav-button {
         margin-inline-start: 20px;
+        margin-inline-end: 20px;
     }
-        
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+    .navtoggle li:last-child {
+        display: none;
+      }
+    .logo {
+        max-width: 64px;
+        padding-top: 3px;
+    }      
+    .project-section {
+        padding-top: 100px;
+    }    
 }
 
 /* Large devices (1024px) */
@@ -314,19 +335,19 @@ main {
     .col-lg-5 {
         width: 40%;
     }
-    #navbar {
+    .navtoggle {
         width: 100%;
     }
     body {
         font-size: 22px;
     }
-    #logodiv {
-        width:10%;
-        max-width: 82px;
-        float: left;
-        padding-top: 5px;
-    }
-    
+    .logo {
+        max-width: 84px;
+        padding-top: 3px;
+    }  
+    .project-section {
+        padding-top: 120px;
+    }    
 }
 /* Xlarge devices (1440px) */
 @media only screen and (min-width: 1440px) {
@@ -339,4 +360,7 @@ main {
         margin-left: auto;
         margin-right: auto;
     }
+    .project-section {
+        padding-top: 120px;
+    }    
 }

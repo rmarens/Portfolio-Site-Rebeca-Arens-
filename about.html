@@ -19,23 +19,21 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Urbanist:wght@300;500&display=swap" rel="stylesheet">
     </head>
+    <script src="https://kit.fontawesome.com/20f502f007.js" crossorigin="anonymous"></script>
     <body>
         <header>
             <div class="container">
-                <div id="navbar">
-                    <div id="logodiv">
-                        <img src="img/Logo1.png" class="logo" alt="Rebeca Arens">
-                    </div>
-                    <div id="directory">
-                        <nav>
-                            <ul>
-                                <li><a href="index.html" class="nav-button">Projects</a></li>
-                                <li><a href="about.html" class="nav-button">About Me</a></li>
-                                <li><a href="#contact" class="nav-button">Contact</a></li>    
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+              <div class="navtoggle" id="myNavtoggle">
+                <img src="img/Logo1.png" class="logo" alt="Rebeca Arens">
+                <nav>
+                  <ul>
+                    <li><a href="index.html" class="nav-button">Projects</a></li>
+                    <li><a href="about.html" class="nav-button">About Me</a></li>
+                     <li><a href="#contact" class="nav-button">Contact</a></li>
+                     <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>        
+                  </ul>
+                </nav>
+              </div>
             </div>
         </header>
         <main>
