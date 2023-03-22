@@ -14,6 +14,10 @@ Complimentary accent color (Gold): #e0c481
 
 /* Layout styling */
 
+html { 
+    scroll-behavior: smooth;
+}
+
 .container {
     padding: 0 15px;
 }
@@ -110,7 +114,7 @@ a:active {
 .arrow:focus {
     color:#03545b;
     text-decoration: underline;
-    padding: 0 2%;
+    padding: 0 1.5%;
     background-color: #cce8dc;
     border-radius: 3em;
 }
@@ -237,10 +241,15 @@ nav > ul > li > a {
 }
 .navtoggle.responsive li:hover {
     border-radius: 3em;
-    padding: 10px 20px;
+    padding: 10px 24px;
     background-color: #3c2033;
     border-bottom: 1px solid rgba(255, 212, 39, 0.5);
     box-shadow: inset 0 -1px 10px -5px rgba(255, 212, 39, 0.3);
+}
+.navtoggle.responsive li:last-child {
+    padding: 0;
+    border-top: 0;
+    border-bottom: 0;
 }
 .navtoggle.responsive nav {
     text-align: end;
@@ -251,15 +260,6 @@ nav > ul > li > a {
     background-color: #3c2033;*/
     float: right;
 }
-.navtoggle.responsive li:last-child {
-    padding: 0;
-    border-top: 0;
-    border-bottom: 0;
-}
-/*.navtoggle.responsive li:nth-last-child(2) {
-    border-top: 0;
-    border-bottom: 0;
-}*/
 .navtoggle.responsive li .icon {
     border-radius: 8px;
     background-color: #3c2033;
