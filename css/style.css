@@ -199,6 +199,10 @@ header {
     position: fixed;
     width: 100%;
     padding: 10px 0 4px;
+    z-index: 9999;
+}
+.headcolor.responsive {
+    background-color: #03545b;
 }
 .logo {
     max-width: 38.82px;
@@ -376,11 +380,11 @@ main {
         margin-inline-start: 20px;
         margin-inline-end: 20px;
     }
-    .navtoggle li:not(:last-child) {
-        display: inline-block;
-    }
     .navtoggle.responsive li {
         all: unset;
+    }
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
     }
     .navtoggle li:last-child {
         display: none;
@@ -396,6 +400,9 @@ main {
         all: unset;
         width: auto;
         float: right;
+    }
+    .navtoggle.responsive li:hover {
+        all: unset;
     }
 }
 

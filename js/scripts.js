@@ -8,3 +8,5 @@ function menuToggle() {
         x.className = "navtoggle";
     }
 }
+
+AOS.init();
