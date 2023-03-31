@@ -314,6 +314,14 @@ main {
     float:none;
 }
 
+iframe {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 50px;
+}
+
 [class*="col-"] {
     float: left;
     padding: 10px;
