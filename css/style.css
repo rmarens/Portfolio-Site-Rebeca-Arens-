@@ -65,6 +65,11 @@ h5 {
     color: #0f2c3f
 } /* Page section title, corresponds to the nav directory options (Projects, About Me) */
 
+@font-face {
+    font-family: 'RushK';
+    src: url(files/fonts/Rushk.otf);
+}
+
 a {
     color: #e0c481;
     text-decoration: none;
