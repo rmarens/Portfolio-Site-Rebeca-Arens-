@@ -38,7 +38,7 @@ h1 {
     font-size: 3em;
     font-weight: 500;
     color: #03545b;
-    font-family: 'RushK', sans-serif;
+    font-family: 'Rushk', sans-serif;
     color: #542b46;
 } /* Main page title or text */
 h2 {
@@ -66,7 +66,8 @@ h5 {
 } /* Page section title, corresponds to the nav directory options (Projects, About Me) */
 
 @font-face {
-    font-family: 'RushK';
+    font-family: 'Rushk';
+    font-style: normal;
     src: url('fonts/Rushk.woff2') format('woff2'),
          url('fonts/Rushk.woff') format('woff'),
          url('fonts/Rushk.eot') format('embedded-opentype')
