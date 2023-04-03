@@ -67,9 +67,10 @@ h5 {
 
 @font-face {
     font-family: 'RushK';
-    src: url(files/fonts/Rushk.woff2) format('woff2'),
-         url(files/fonts/Rushk.woff) format('woff'),
-         url(files/fonts/Rushk.otf) format('opentype');
+    src: url('files/fonts/Rushk.woff2') format('woff2'),
+         url('files/fonts/Rushk.woff') format('woff'),
+         url('files/fonts/Rushk.eot') format('embedded-opentype')
+         url('files/fonts/Rushk.otf') format('opentype');
 }
 
 a {
