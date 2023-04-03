@@ -67,7 +67,7 @@ h5 {
 
 @font-face {
     font-family: 'RushK';
-    src: url(files/fonts/Rushk.otf);
+    src: url(files/fonts/Rushk.otf) format("otf");
 }
 
 a {
@@ -469,7 +469,6 @@ iframe {
         width: 40%;
     }
     .col-lg-5 img {
-        max-width: 400px;
         display: flex;
         justify-content: space-around;
         margin-right: 0px;
