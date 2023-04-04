@@ -357,6 +357,9 @@ iframe {
 .project-section {
     padding-top: 50px;
 }
+.project-section img {
+    width: 100%;
+}
 
 
 .Pickleball {
