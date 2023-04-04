@@ -319,13 +319,22 @@ main {
     border-radius: 100%;
     float:none;
 }
+#profilepic {
+    width: 100%;
+}
 
+#prototype {
+    padding: 50px;
+}
 iframe {
     display: block;
     margin: 0 auto;
-    background-color: transparent;
+    background-color: #f5f5f5;
     text-align: center;
-    padding-top: 50px;
+    border: #f5f5f5;
+}
+.work-image {
+    width: 100%;
 }
 
 [class*="col-"] {
@@ -449,6 +458,9 @@ iframe {
     .project-section {
         padding-top: 70px;
     }
+    .section {
+        padding: 0 8px;
+    }    
     .navtoggle.responsive nav{
         all: unset;
         width: auto;
