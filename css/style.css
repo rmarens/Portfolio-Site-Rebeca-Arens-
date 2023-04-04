@@ -67,11 +67,12 @@ h5 {
 
 @font-face {
     font-family: 'Rushk';
-    font-style: normal;
+    src: url('../fonts/Rushk.eot');
     src: url('../fonts/Rushk.woff2') format('woff2'),
          url('../fonts/Rushk.woff') format('woff'),
-         url('../fonts/Rushk.eot') format('embedded-opentype')
-         url('../fonts/Rushk.otf') format('opentype');
+         url('../fonts/Rushk.eot?#iefix') format('embedded-opentype')
+         url('../fonts/Rushk.otf') format('opentype'),
+         url('../fonts/Rushk.svg#Rushk') format('svg');
 }
 
 a {
