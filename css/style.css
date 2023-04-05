@@ -354,7 +354,6 @@ iframe {
 [class*="col-"] {
     float: left;
     padding: 10px;
-    display: flex;
 }
 
 .row::after {
