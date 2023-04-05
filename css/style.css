@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5 {
     line-height: normal;
 }
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 500;
     color: #03545b;
     font-family: 'Rushk', 'Mogra', serif;
@@ -298,7 +298,7 @@ footer h2{
 }
 
 main {
-    padding-top: 15%;
+    padding-top: 60px;
 }
 #hero {
     background-color: #f5f5f5;
@@ -391,7 +391,7 @@ iframe {
         padding: 10px 0;
     }
     main {
-        padding-top: 10%;
+        padding-top: 80px;
     }    
     nav {
         width: auto;
@@ -406,6 +406,9 @@ iframe {
     }
     body {
         font-size: 18px;
+    }
+    h1 {
+        font-size: 3em;
     }
     #hero {
         text-align: center;
@@ -477,7 +480,7 @@ iframe {
 /* Large devices (1024px) */
 @media only screen and (min-width: 1024px) {
     main {
-        padding-top: 8%;
+        padding-top: 100px;
     }
     .col-lg-8 {
         width: 50%;
