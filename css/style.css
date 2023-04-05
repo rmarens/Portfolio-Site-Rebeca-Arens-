@@ -65,7 +65,7 @@ h5 {
     color: #0f2c3f
 } /* Page section title, corresponds to the nav directory options (Projects, About Me) */
 
-@font-face {
+/*@font-face {
     font-family: 'Rushk';
     src: url('../fonts/Rushk.eot');
     src: url('../fonts/Rushk.woff2') format('woff2'),
@@ -73,7 +73,7 @@ h5 {
          url('../fonts/Rushk.eot?#iefix') format('embedded-opentype')
          url('../fonts/Rushk.otf') format('opentype'),
          url('../fonts/Rushk.svg#Rushk') format('svg');
-}
+}*/
 
 img {
     width: 100%;
@@ -104,7 +104,6 @@ a:active {
     padding: 0 1%;
     display: inline-block;
     line-height: 1.5;
-    background-color: none;
     transition: .7s;
 }
 .section:visited {
