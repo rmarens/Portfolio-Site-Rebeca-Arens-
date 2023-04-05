@@ -75,6 +75,11 @@ h5 {
          url('../fonts/Rushk.svg#Rushk') format('svg');
 }
 
+img {
+    width: 100%;
+}
+
+/*General link*/
 a {
     color: #e0c481;
     text-decoration: none;
@@ -91,6 +96,7 @@ a:active {
     color: #e0c481;
     text-decoration: none;
 }
+/* Directory links for project page*/
 .section {
     color: #03545b;
     text-decoration: none;
@@ -107,7 +113,7 @@ a:active {
 .section:hover,
 .section:focus {
     color: #03545b;
-    padding: 0 4%;
+    padding: 0 12px;
     display: inline-block;
     text-decoration: underline;
     background-color: #cce8dc;
@@ -310,6 +316,15 @@ main {
 }
 .row {
     margin: 25px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.row#prototype {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #profile img {
@@ -323,16 +338,15 @@ main {
     width: 100%;
 }
 
-#prototype {
-    padding: 50px;
-}
 iframe {
-    display: block;
+    display: flex;
     margin: 0 auto;
     background-color: #f5f5f5;
     text-align: center;
     border: #f5f5f5;
+    flex-basis: content;
 }
+
 .work-image {
     width: 100%;
 }
@@ -340,6 +354,7 @@ iframe {
 [class*="col-"] {
     float: left;
     padding: 10px;
+    display: flex;
 }
 
 .row::after {
@@ -355,7 +370,10 @@ iframe {
 }
 
 .project-section {
-    padding-top: 50px;
+    display: block;
+    height: 50px;
+    margin-top: -50px;
+    visibility: hidden;
 }
 .project-section img {
     width: 100%;
@@ -423,9 +441,16 @@ iframe {
         width: 60%;
         padding: 10px 20px 10px 10px;
     }
+    #prototype .col-md-8 {
+        padding: 10px 0 10px 20px;
+    }
     .col-md-4 {
         width: 40%;
         padding: 20px;
+    }
+    #prototype .col-md-4 {
+        justify-content: space-around;
+        align-items: center;
     }
     .col-md-4 img {
         max-width: 400px;
@@ -465,8 +490,12 @@ iframe {
         padding-top: 70px;
     }
     .section {
-        padding: 0 8px;
-    }    
+        padding: 0 1%;
+    }
+    .section:hover,
+    .section:focus {
+        padding: 0 24px;
+    }       
     .navtoggle.responsive nav{
         all: unset;
         width: auto;
@@ -513,6 +542,10 @@ iframe {
     .logo {
         max-width: 64px;
         padding-top: 8px;
+    }
+    .section:hover,
+    .section:focus {
+        padding: 0 40px;
     }          
 }
 /* Xlarge devices (1440px) */
