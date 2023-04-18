@@ -65,6 +65,10 @@ h5 {
     color: #0f2c3f
 } /* Page section title, corresponds to the nav directory options (Projects, About Me) */
 
+h3.sub2-header {
+    font-size: 1.25em;
+}
+
 img {
     width: 100%;
 }
@@ -472,15 +476,12 @@ iframe {
         max-width: 48px;
         padding-top: 9px;
     }      
-    .project-section {
-        padding-top: 70px;
-    }
     .section {
         padding: 0 1%;
     }
     .section:hover,
     .section:focus {
-        padding: 0 24px;
+        padding: 0 20px;
     }       
     .navtoggle.responsive nav{
         all: unset;
@@ -525,16 +526,13 @@ iframe {
     body {
         font-size: 22px;
     }
-    .project-section {
-        padding-top: 80px;
-    }
     .logo {
         max-width: 64px;
         padding-top: 8px;
     }
     .section:hover,
     .section:focus {
-        padding: 0 40px;
+        padding: 0 30px;
     }
     .container {
         padding: 0 50px;
