@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="author" content="Rebeca Arens">
         <meta name="description" content="UX UI design portfolio">
-        <title>Vela | Rebeca Arens</title>
+        <title>ChatGPT Feature Case Study | Rebeca Arens</title>
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -24,6 +24,16 @@
             h1 {margin-top: 50px; margin-bottom: 0;}
             body.standalone {
                 background-color: #f5f5f5;
+            }
+            h4.left {
+                text-align: left;
+                margin-top: 0;
+            }
+            h3.quote {
+                padding-right: 20%;
+                /*background-image: url(img/chatgpt/insight.svg);
+                background-size: auto 100%;
+                background-repeat: no-repeat;*/
             }
         </style>        
         <script src="https://kit.fontawesome.com/20f502f007.js" crossorigin="anonymous"></script>
@@ -49,147 +59,265 @@
             <div class="container">
                 <div>
                     <h5>PROJECTS</h5>
-                    <h1>VELA</h1>
+                    <h1>CHATGPT FEATURE REDESIGN</h1>
                 </div>
                 <div class="project-section" id="top"></div>
                 <div>
-                    <h4><a href="#about" class="section">About</a> <a href="#research" class="section">Research</a> <a href="#ideation" class="section">Ideation</a> <a href="#wireframes" class="section">Wireframes</a> <a href="#testing" class="section">Testing</a> <a href="#iterations" class="section"><span>Design Iterations</span></a></h4>    
+                    <h4><a href="#about" class="section">About</a> <a href="#research" class="section">Research</a> <a href="#ideation" class="section">Ideation</a> <a href="#design" class="section">Design</a> <a href="#contentplanning" class="section">Content Planning</a> <a href="#testing" class="section">Testing</a> <a href="#iterations" class="section"><span>Design Iterations</span></a></h4>    
                 </div>
             </div>
             <div class="container">
                 <div class="row" id="prototype">
-                    <div class="col-md-4 col-lg-5 col-xl-4" id="invision">
-                        <div>
-                            <iframe width="221" height="368" src="https://rebecaarens494992.invisionapp.com/console/share/9SQ7KA2VXU8" allowfullscreen></iframe>                
-                        </div> <!--Try to figure out how to a) make this smaller and b) not lose the frame around it. It's frustrating that I can't figure it out yet.!-->
-                    </div>                    
-                    <div class="col-md-8 col-lg-7 col-xl-4" id="project-details">
-                        <div class="project-section" id="about"></div>
-                        <div>
-                            <h2>About Vela <a href="#top" class="arrow">&#8593;</a></h2>
-                            <p>Vela is a UX/UI case study of a responsive web app that was designed over a period of 6 months, from July 2022 to January 2023, with myself as the sole UX Designer. It was designed to provide simple, straightforward marine weather reports to users of all levels. </p>
-                            <h3>Why Vela?</h3>
-                            <p>Sailors, surfers, and beachgoers alike all need a way to easily find and understand the weather condition of their favorite spot. Vela's goal is to make sure that everyone is able to make the most out of each day on the water, by providing accurate and reliable data, easy-to-read weather reports, and around the world service.</p>
-                            <p>Vela also provides a way to save favorite locations, create weather itineraries for trips, keep aware of water and weather safety issues in locations, and discover and communicate with rental and tour companies.</p>
+                        <div id="gptiframe">
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FAwNAat6o2gt96WC56cdAnw%2FChatGPT-Feature-Design-Project-v1.0%3Fpage-id%3D1766%253A23141%26type%3Ddesign%26node-id%3D2743-35417%26viewport%3D-377%252C436%252C0.02%26t%3DVlfYGHHpFx5I63m7-1%26scaling%3Dcontain%26starting-point-node-id%3D2743%253A35417%26mode%3Ddesign" allowfullscreen></iframe>                        
+                        </div> <!--Try to figure out how to center it-->
+                </div>                    
+                <div class="project-section" id="about"></div>
+                <div>
+                    <h2>About <a href="#top" class="arrow">&#8593;</a></h2>
+                    <h3>Overview</h3>
+                    <p>OpenAI's ChatGPT has taken the world by storm, and launched a lot of conversations and innovations in AI chatbots. It's sparked a lot of curiosity, which has prompted many users to come give it a shot.</p>
+                    <p>I teamed up with a couple other UX/UI designers to dive into the experience of the casual user, to identify where they got stuck and how we can improve the usability of ChatGPT for new and casual users. This was a personal project we worked on in our own time, driven by our own curiosity--we are unaffliated with ChatGPT.</p>
+                    <p>This project took place during May 2023-July 2023.</p>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <div class="right-column">
+                                <h3>Roles:</h3>
+                                <p>Product strategy, User research, User personas, Visual design, Interaction, Prototyping &#38 testing</p>
+                                <p>Designed content for prototyping</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <div class="left-column">
+                                <h3>Tools:</h3>
+                                <ul>
+                                    <li><p>Figma</p></li>
+                                    <li><p>Maze</p></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="project-section" id="research"></div>
+                <br><br>
                 <div>
                     <h2>Research <a href="#top" class="arrow">&#8593;</a></h2>
-                    <p>During the discovery phase, I conducted an analysis of both the competitive environment and my potential userbase.</p>
-                    <p>5 people were interviewed to learn what water sports people commonly took part in, when and where they did these activities, what kind of weather data was needed, and how to best display the information. With the interview, I was able to start to identify a rough profile of common needs, frustrations, and desires to shape the form of the app.</p>
-                    <h3>Key Takeaways</h3>
-                    <ul>
-                        <li><p>Users want to see that data is <b>frequently updated</b>, so they know they can trust it.</p></li>
-                        <li><p><b>Visual data</b> that can be understood at a glance is key! Some users are interested in viewing exact numbers and charts, but there was an unanimous interest in visual representations of data.</p></li>
-                        <li><p>Due to time and geographic constraints, users primarily enjoy sports during vacation. Many of them are interested in <b>traveling to different locations</b> to surf or sail.</p></li>
-                        <li><p><b>Different safety concerns take priority depending on the sport.</b> Users who aren't in a boat, like swimmers, scuba divers, or surfers, are more concerned about dangers in the water itself, while boat users are more concerned about weather changes.</p></li>
-                        <li><p>The main thing users are concerned about when they get ready to go out is <b>information about the wind</b>. It's the most difficult thing for casual users to judge themselves, and they rely on apps for it the most.</p></li>
-                        <li><p><b>Most apps on the market tend to be specific or fragmented in purpose</b>, with specialized information in only one sport or area of weather. There's opportunity in creating a weather app that hosts a <b>range of weather information</b>, is <b>simple to understand</b>, and provides <b>extra information about a location</b> (such as what the seabed is like, local dangers and hazards, etc), in order to target more casual users who don't often have expertise in these areas.</p></li>
-                    </ul>
+                    <h3 class="quote">So what do people know about ChatGPT?</h3>
+                    <p>To kick off our project, we structured our user research into three main parts: social media listening, user surveys, and detailed interviews.</p>
+                    <img src="img/chatgpt/SM-Insights&Listening.png">
+                    <br><br>
+                    <h3 class="quote">For the ordinary person, there's a lot to worry about.</h3>
+                    <p>Based on what we observed, there's a lot of fear and confusion around ChatGPT. People worried about bias and misinformation being magnified, privacy issues, and the ever-looming threat of being replaced by AI, especially when it comes to the arts.</p>
+                    <p>But fear isn't unilateral--others saw it as an opportunity for improvements in learning and a way to cut out the busywork they find themselves bogged down in.</p>
+                    <br><br>
+                    <h3 class="quote">Assistance creating better prompts could help increase users' ChatGPT literacy.</h3>
+                    <p>To get to the heart of the user experience, we wanted to hear from ChatGPT's existing user base. We sent out a survey on multiple platforms, asking for people who had used ChatGPT before and were interested in sharing their experience. We received 24 responses before we closed the survey; of those 24, half expressed interest in participating in a user interview as well, forming the pool of our interviewees for the project.</p>
+                    <p>To identify common pain points and frustrations, and understand our users' behavior, we asked our users to describe their experience and level comfort with ChatGPT. We analyzed the data to create insights that we then sorted into an affinity map, to better visualize what our users' experience looked like.</p>
+                    <img src="img/chatgpt/AffinityMap.png">
+                    <img src="img/chatgpt/AffinityMap-Insights.png">
                 </div>
                 <div class="project-section" id="ideation"></div>
+                <br><br>
                 <div>
                     <h2>Ideation <a href="#top" class="arrow">&#8593;</a></h2>
-                    <p>Once I'd gained a better understanding of my users and goals through research, I created user personas and identified user journeys. With that information, I started building my user flows around the major tasks users would complete on my app.</p>
-                    <h3>User Personas</h3>
+                    <h3 class="quote">We can increase the retention of new users and the usage of casual users in two ways: help them broaden their horizons on what they can use ChatGPT for, and streamline their learning curve in speaking to AI to make best use of it.</h3>
+                    <p>We didn't start our case study with a definite goal in mind--our research started out with the goal of finding common frustrations through our survey, then delving further into them during the interviews to think of solutions that can make our users' lives easier. Out of the 4 major insights we cleaned from the user interviews, we chose to focus on the following:</p>
                     <div class="row">
                         <div class="col-md-6 col-lg-8 col-xl-4">
-                            <img src="img/vela/userpersona-caroline.png" alt="User Persona: Caroline.">
+                            <img src="img/chatgpt/Solution1.png">
                         </div>
                         <div class="col-md-6 col-lg-8 col-xl-4">
-                            <img src="img/vela/userpersona-matthew.png" alt="User Persona: Matthew.">
+                            <img src="img/chatgpt/Solution2.png">
                         </div>
                     </div>
-                    <h3>View and save a location's weather forecast:</h3>
-                    <picture>
-                        <img src="img/vela/UserFlow.png" alt="User Flow">
-                    </picture>
+                    <br><br>
+                    <h3 class="quote">Meet John and Tamara.</h3>
+                    <p>In order to form a deeper understanding of the users we were aiming to help, I and a teammate were charged with creating 2 personas for our design goals. We drew from the data we'd gathered from our user research to create their usage habits, needs, motivations, and frustrations.</p>
+                    <div class="row">
+                        <div class="col-md-3 col-lg-4 col-xl-2">
+                            <img src="img/chatgpt/PersonaJohn.png">
+                            <img src="img/chatgpt/PersonaTamara.png">
+                        </div>
+                        <div class="col-md-9 col-lg-9 col-xl-6">
+                            <img src="img/chatgpt/PersonaComparison.png">
+                        </div>
+                    </div>
+                    <br><br>
+                    <h3 class="quote">So how can we help users discover new ways to use ChatGPT?</h3>
+                    <!--this needs to be a 3-column flexbox. Code that in later.-->
+                    <div class="row">
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <img src="img/chatgpt/UseCase-Solution1.png">
+                        </div>
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <img src="img/chatgpt/UseCase-Solution3.png">
+                        </div>
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <img src="img/chatgpt/UseCase-Solution2.png">
+                        </div>
+                    </div>
+                    <h3 class="quote">And how can we assist users in creating better prompts for higher quality responses from ChatGPT?</h3>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <img src="img/chatgpt/Prompts-Solution1.png">
+                        </div>
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <img src="img/chatgpt/Prompts-Solution2.png">
+                        </div>
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <img src="img/chatgpt/Prompts-Solution3.png">
+                        </div>
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <img src="img/chatgpt/Prompts-Solution4.png">
+                        </div>
+                    </div>
                 </div>
-                <div class="project-section" id="wireframes"></div>
+                <div class="project-section" id="design"></div>
+                <br><br>
                 <div>
-                    <h2>Wireframes <a href="#top" class="arrow">&#8593;</a></h2>
-                    <p>It was time to start taking all my research and finding a way to integrate it all into a design that would be straightforward, easy to use, and provide as many solutions to its user as possible. </p>
-                    <p>Starting off with <b>low-fidelity wireframes</b>, I started to visualize the skeleton of my project. I focused primarily on basic functionality, where I began to address the primary user flows and how they would look within the app itself. I then started  moving towards recreating those low-fidelity wireframes with <b>Sketch</b>, so I could have a cleaner visualization as I moved forward into prototyping and mid-fidelity wireframes.</p>
-                    <picture>
-                        <img src="img/vela/lowfidelity.png" alt="Low fidelity wireframes">
-                    </picture>
-                    <p>Once I had a rough idea of the features and placement for my screens, I headed back to Sketch to start developing my <b>mid-fidelity wireframes</b>, where I started developing what the visual representation of weather data would look like, as well as a functional early prototype.</p>
-                    <picture>
-                        <img src="img/vela/midfidelity.png" alt="Mid fidelity wireframes">
-                    </picture>
-                    <p>Afterwards, I moved on to creating my <b>high-fidelity wireframes</b>. I focused on giving it more attractive UI, and used the high-fidelity prototype to test my both my UX and UI during user testing.</p>
-                    <figure>
-                        <img src="img/vela/highfidelity.png" alt="High fidelity wireframes">
-                        <figcaption><i><small>Vela high-fidelity prototype, v.3. User testing was run on this prototype, and later iterations were developed as a result of testing and improvements made to the UI.</small></i></figcaption>
-                    </figure>
+                    <h2>Design <a href="#top" class="arrow">&#8593;</a></h2>
+                    <p>With the needs of our personas in mind, we set up some user stories for our design goals.</p>
+                    <img src="img/chatgpt/UserStories.png">
+                    <br><br>
+                    <p>When it came to starting our design, our 4-person team first split up and each member created their own low-fidelity wireframes of their vision for the features. The next day, we came back together, presented our work, and whittled down the suggestions into a clearer vision. We split up into two teams, each team taking a different feature, and focused on forming the design elements that made the cut into something cohesive. I worked primarily on the <b>Follow-Up Prompt feature</b>, though everyone contributed to both sides of the project.</p>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <img src="img/chatgpt/Wireframes-UOTD.png">
+                        </div>
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <img src="img/chatgpt/Wireframes-FUP.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-section" id="contentplanning"></div>
+                <br><br>
+                <div>
+                    <h2>Content Planning <a href="#top" class="arrow">&#8593;</a></h2>
+                    <h3 class="quote">Content planning to create an immersive, functional prototype proved to be the biggest challenge.</h3>
+                    <p>ChatGPT already had a set, essentials-focused visual design language, so we reused as much as we could with what was already there and made as few new things as possible in our designs. Our UI designer created a components library that we all drew from to put together our mid-fidelity wireframes sleekly and quickly. But to create a prototype that truly represented and communicated our planned features, we needed to create content and simulate the use of ChatGPT as accurately as possible.</p>
+                    <img src="img/chatgpt/ContentTree-Style.png">
+                    <br><br>
+                    <p>For the prototype for the follow-up prompt feature, I first created a quick flow that simulated the experience of the user, as well as a guide to how many screens were necessary to give them multiple paths and how they linked to each other. It streamlined the process of prototyping and kept our pages and paths organized while we worked. To balance the user experience and the required workload for us designers, we created a three levels of follow-up prompts:</p>
+                    <h4>Level 1 - Fully functional</h4>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <img src="img/chatgpt/Level1.png">
+                        </div>
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <p>Users needed to be able to experience follow-up features exactly as they would work. This meant allowing them to choose any prompt and follow the conversation including a new set of prompts if they decided to regenerate answers.</p>
+                        </div>
+                    </div>
+                    <h4>Level 2 - Getting the gist of it</h4>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <img src="img/chatgpt/Level2.png">
+                        </div>
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <p>Ultimately, we decided it was inefficient for us to give the same functionality all the way throughout as there would have been 36 potential responses, so we made just the first option followable to each unique option and allowed regeneration to continue showing new responses.</p>
+                        </div>
+                    </div>
+                    <h4>Level 3 - Automaticity</h4>
+                    <p>At this point users should have had a good understanding of what we were trying to demonstrate with our proposed new feature. They would be able to clearly imagine what it might be able to do with their own prompts.</p>
+                    <img src="img/chatgpt/Level3.png">
+                    <br><br>
+                    <h3 class="quote">Users oftentimes knew the result that they want, but need extra time or struggle to phrase it properly in ChatGPT.</h3>
+                    <p>Our research pinpointed that a major frustration was the repeated prompting necessary for chatGPT to understand what they were trying to communicate. As a result, many users would end typing very vague initial prompts and slowly inching their way to a result they were looking for. In order to mimic the style of this transaction in the prototype, we came up with our initial prompt:</p>
+                    <img src="img/chatgpt/ContentPlanning1.png">
+                    <br><br>
+                    <img src="img/chatgpt/ContentPlanning2.png">
+                    <br><br>
                 </div>
                 <div class="project-section" id="testing"></div>
+                <br><br>
                 <div>
                     <h2>User Testing <a href="#top" class="arrow">&#8593;</a></h2>
-                    <div>
-                        <h3>Test Goals</h3>
-                        <ul>
-                            <li><p>Assess learnability and usability of the Vela app.</p></li>
-                            <li><p>Evaluate users' satisfaction with information and features provided.</p></li>
-                            <li><p>Observe how users navigate the app and find their way to the details of a location.</p></li>
-                            <li><p>Observe how easily users find and create a vacation plan.</p></li>
-                        </ul>
-                        <h3>Test Objectives</h3>
-                        <ul>
-                            <li><p>Finding a location and viewing the conditions of a location (forecast and warnings).</p></li>
-                            <li><p>Contacting a company or store nearby a location.</p></li>
-                            <li><p>Creating a vacation plan with multiple locations.</p></li>
-                        </ul>
-                        <h3>Methodology</h3>
-                        <ul>
-                            <li><p>6 participants</p></li>
-                            <li><p>Remote &amp; in-person moderated testing</p></li>
-                            <li><p>10-20 minute test sessions</p></li>
-                            <li><p>Recorded sessions</p></li>
-                            <li><p>Users are given a short briefing, then asked to think aloud as they proceed to complete tasks using the Vela app. They then complete a short survey and are debriefed.</p></li>
-                        </ul>    
-                        <h3>Key Changes</h3>
-                        <ul>
-                            <li><p>Location pins were made larger, given an outline, and had a drop shadow added to them so they stood out against the map.</p></li>
-                            <li><p>A primary CTA, “Add to Plan,” was added to the location page itself since it was the way most users initially tried to create a plan.</p></li>
-                            <li><p>Coachmarks and progressive onboarding were implemented within the app itself to offset the initial learning curve and lessen the cognitive load during the initial onboarding.</p></li>
-                            <li><p>The slider bar, used to adjust the timescale of the forecast, was replaced by a segmented button in order to more clearly communicate its purpose.</p></li>
-                        </ul>
+                    <p>User testing was an iterative process that was conducted at two major milestones of the project to gather feedback on usability, pain points, and user opinion on the new feature. We had two main phases: moderated, for our initial mid-fidelity prototype, and unmoderated, for our high fidelity prototype.</p>
+                    <br><br>
+                    <h3>Mid-Fidelity Usability Testing</h3>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-8 col-xl-4"><!--fix the excessive top padding between Mid-fi & test goals/methodology-->
+                            <div class="right-column">
+                                <h4 class="left">Test Goals:</h4>
+                                <p>Assess learnability and usability of Use of the Day and Follow-Up Prompt feature</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <div class="left-column">
+                                <h4 class="left">Methodology:</h4>
+                                <ul>
+                                    <li><p>5 participants</p></li>
+                                    <li><p>Remote moderated testing (Google Meet)</p></li>
+                                    <li><p>20-30 minutes, recorded test sessions</p></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <p> </p>
+                    <p>As a whole, there weren't many critical usability errors; instead, we were able to focus on more minor usability problems, such as fixing the phrasing of components and content, and improving the visibility of secondary features, such as the link to the archive of ‘previous' featured uses in Use of the Day and creating a tooltip to help users know where to start.</p>
+                    <br><br>
+                    <h3>High-Fidelity User Testing</h3>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-8 col-xl-4"><!--fix the excessive top padding between Mid-fi & test goals/methodology-->
+                            <div class="right-column">
+                                <h4 class="left">Test Goals:</h4>
+                                <ul>
+                                    <li><p>Assess user feedback on high-fidelity prototype</p></li>
+                                    <li><p>Obtain metrics for usability, user interest, and projected productivity</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <div class="left-column">
+                                <h4 class="left">Methodology:</h4>
+                                <ul>
+                                    <li><p>24 participants</p></li>
+                                    <li><p>Remote unmoderated testing (Maze)</p></li>
+                                    <li><p>5-10 minutes</p></li>
+                                    <li><p>Consists of prototype &#38 entry/exit polls</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <p>As we were quickly approaching the deadline we'd set for ourselves, we decided to take advantage of this project being a case study and try to familiarize ourselves with holding an unmoderated usability test. I did research into platforms to hold our test, and when we settled upon using Maze, I familiarized myself with the platform and set up the unmoderated usability test. We invited some of our previous interviewees to test out the result of the research they contributed to, and then cast the link out into the digital world to reel in some new users who had no familiarity with our project. </p>
+                    <img src="img/chatgpt/Metrics-UOTD1.png">
+                    <div class="row"><!--I think I want to make the metrics + the UOTD2 side columns, like I originally planned.-->
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <h4>With the “Use of the Day” feature, were you able to discover a <b>new way</b> to use ChatGPT you would not have thought about on your own?</h4>
+                        </div>
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <img src="img/chatgpt/Metrics-UOTD2.png">
+                        </div>
+                    </div>
+                    <img src="img/chatgpt/Metrics-FUP1.png">
+                    <div class="row"><!--Same thing, metrics should column.-->
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <h4>How much <b>faster</b> do you think the Follow-Up Prompt feature would help you phrase your ideas if it were integrated in the future?</h4>
+                        </div>
+                        <div class="col-md-6 col-lg-8 col-xl-4">
+                            <img src="img/chatgpt/Metrics-FUP2.png">
+                        </div>
+                    </div>
+                    <br><br>
                 </div>
-                <div class="project-section" id="iterations"></div>
-                <div>
-                    <h2>Design Iterations <a href="#top" class="arrow">&#8593;</a></h2>
-                    <h3>Home</h3>
-                    <p>The home page is a personal touchstone, where users can access their favorite locations and businesses, messages, and personally created weather condition alerts.</p>
-                    <picture>
-                        <img src="img/vela/IterationHome.png" alt="Home iterations">
-                    </picture>
-                    <h3>Location Details</h3>
-                    <p>The location page is one of the central features of the app, where users can view forecast information and access warnings and local businesses.</p>
-                    <picture>
-                        <img src="img/vela/IterationLocation.png" alt="Location iterations">
-                    </picture>
-                    <h3>Warnings</h3>
-                    <p>The Warnings page was created to help users discover more about the location, address safety concerns, and keep users updated on weather emergencies.</p>
-                    <picture>
-                        <img src="img/vela/IterationWarnings.png" alt="Warnings iterations">
-                    </picture>
-                    <h3>Search</h3>
-                    <p>The search feature is designed for users to be able to quickly and easily find a location they are searching for, whether it's a beach, a lake, or a local business.</p>
-                    <picture>
-                        <img src="img/vela/IterationSearch.png" alt="Search iterations">
-                    </picture>
-                    <h3>Plan</h3>
-                    <p>The plan feature was originally added as a result of discoveries during user research, in order to provide users with the ability to keep track of multiple forecasts together.</p>
-                    <picture>
-                        <img src="img/vela/IterationPlan.png" alt="Plan iterations">
-                    </picture>
-                </div>
+                <div class="project-section" id="final"></div>
                 <br><br>
+                <div>
+                    <h2>Final Design <a href="#top" class="arrow">&#8593;</a></h2>
+                    <p>You can view our final high-fidelity prototype here.</p>
+                    <h3 class="quote">Key Takeaways:</h3>
+                    <p>Being part of a design team was a new experience for me--as a new UX designer, I was accustomed to working on individual projects, being solely responsible for all the work. It was a very eye-opening experience, one that taught me a lot about practicing lean UX and creating and keeping to a product delivery schedule.</p>
+                    <p>Some key takeaways from the project:</p>
+                    <ul>
+                        <li><p><b>Prepare an agenda and stick to it.</b> At the beginning of our project, our team would regularly end up with 2-3 hour long meetings, endlessly sharing opinions and discussing the pros and cons of decisions we were making. While the decisions made were solid, the meetings were time-consuming and draining. Approaching the meeting with a dedicated agenda, turning in deliverables a few hours ahead of time, and focusing more on asynchronous decision-making helped us run a tighter ship.</p></li>
+                        <li><p><b>Hone in on the problem.</b> Early in our journey, we found ourselves floundering a bit when it came to our hypothesis and solution development. The questions we'd created for our user research could sometimes err on the side of too general, which made it more difficult to identify key pain points. Evaluating your user survey and interview questions to be sure they'll get you relevant information is key to unlocking solutions to pain points.</p></li>
+                        <li><p><b>Plan out phases before starting them.</b> Going into our testing phase, we were unsure of how many rounds of testing we'd decide to do. Our project ran a little longer than we originally planned for, and it was partly due to not being sure about the timeline. It taught me that even details that seem hard to schedule and plan for need to be nailed down!</p></li>
+                        <li><p><b>Division of labor is key!</b> We didn't have an issue when it came to dividing up tasks among the team members--in fact, everyone's initiative and willingness to take on different parts of the project helped the wireframing and prototyping go very smoothly, and the unique skills we brought to the table helped us create a final product we were pretty proud of. None of us had worked with others on a project before, so we were definitely pleasantly surprised by this lesson!</p></li>
+                    </ul>
+                    <h3 class="quote">What's next?</h3>
+                    <p>ChatGPT updates its site with incredible speed--between the end of this project and when this case study was posted, the site had already been updated several times, with small adjustments to the UX/UI being made.</p>
+                    <p>When reviewing our work and the data we've received from our usability tests, there's certainly areas for improvement and further innovation. One idea we've considered pursuing in the future is changing the UI of the follow-up prompts to be more targeted and accurate, focusing on generating different prompts depending on the section of the response the user is focusing on. Additionally, we'd like to see how we can make these features more relevant and improve the experience of the advanced ChatGPT user as well.</p>
+                </div>
+                <br><br><br><br>
             </div>
         </main>
         <footer id="contact">
